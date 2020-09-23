@@ -179,7 +179,11 @@ public class VendedorController implements Serializable {
         recreateModel();
         return "List";
     }
-
+    
+     public String login() {
+        
+        return "Home";
+    }
     public SelectItem[] getItemsAvailableSelectMany() {
         return JsfUtil.getSelectItems(ejbFacade.findAll(), false);
     }
